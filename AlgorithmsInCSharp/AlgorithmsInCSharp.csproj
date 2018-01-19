@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IPriority.cs" />
+    <Compile Include="Applications\FileIndex.cs" />
     <Compile Include="ArrayBased\BinarySearchST.cs" />
+    <Compile Include="ArrayBased\HashTable.cs" />
     <Compile Include="ArrayBased\PriorityQueue.cs" />
     <Compile Include="ArrayBased\QuickFind.cs" />
     <Compile Include="ArrayBased\QuickUnion.cs" />
@@ -53,6 +55,7 @@
     <Compile Include="Linked\BST.cs" />
     <Compile Include="Linked\Node.cs" />
     <Compile Include="Linked\Queue.cs" />
+    <Compile Include="Linked\RedBlackBST.cs" />
     <Compile Include="Linked\Stack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
