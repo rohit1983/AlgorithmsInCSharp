@@ -52,6 +52,7 @@
     <Compile Include="ArrayBased\ResizingArrayQueue.cs" />
     <Compile Include="ArrayBased\ResizingArrayStack.cs" />
     <Compile Include="ArrayBased\WeightedQuickUnion.cs" />
+    <Compile Include="DynamicProgramming\SubString.cs" />
     <Compile Include="Linked\BST.cs" />
     <Compile Include="Linked\Node.cs" />
     <Compile Include="Linked\Queue.cs" />

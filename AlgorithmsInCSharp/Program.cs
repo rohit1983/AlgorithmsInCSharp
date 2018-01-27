@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Algorithms.Sorting;
+using AlgorithmsInCSharp.DynamicProgramming;
 
 namespace AlgorithmsInCSharp
 {
@@ -11,6 +12,24 @@ namespace AlgorithmsInCSharp
     {
         static void Main(string[] args)
         {
+            SubString sub = new SubString();
+            int outStartPos = -1;
+            int length = sub.FindMaxCommonSubstring("RohitChauhanJS", "JainChauhanSingh", out outStartPos);
+            int outTow = -1;
+            Console.WriteLine("RohitChauhanJS".Substring(outStartPos, length));
+            int checkTow = sub.FindMaxCommonSubstring("TooOld", "OldIGold", out outTow);
+            if(checkTow >= 1)
+            {
+                string sbr = "TooOld".Substring(outTow, checkTow);
+                Console.WriteLine(sbr);
+            }
+            int outTthree = -1;
+            int checkThree = sub.FindMaxCommonSubstring("ChRohit", "Chauhan", out outTthree);
+            if (checkThree >= 1)
+            {
+                string sbr2 = "ChRohit".Substring(outTthree, checkThree);
+                Console.WriteLine(sbr2);
+            }
             //remove null elements of array in beginning
             IComparable[] inputArray = {'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E' };
             IComparable[] inputArrayHeap = { null, 'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E' };
